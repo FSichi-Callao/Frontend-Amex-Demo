@@ -1,0 +1,9 @@
+.content-grafic {
+    display: flex;
+    justify-content: center;
+}
+
+.donut {
+    background-color: white;
+    border-radius: 20px;
+}
