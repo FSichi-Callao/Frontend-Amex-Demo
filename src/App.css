@@ -1,0 +1,455 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 320px;
+  background: #132644;
+  z-index: 100;
+  transition: all 0.4s ease;
+}
+
+.sidebar.close {
+  width: 78px;
+}
+
+.sidebar .logo-details {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* .sidebar .logo-details i {
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+} */
+
+/* .sidebar .logo-details .logo_name {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+} */
+
+.sidebar .logo-details .logo_img_open {
+  margin-left: -25px;
+  margin-top: 40px;
+  width: 320px;
+  height: 100px;
+}
+
+.sidebar.close .logo-details .logo_img_close {
+  margin-left: -13px;
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+}
+
+.sidebar.close .logo-details .logo_img_open {
+  display: none;
+}
+
+.sidebar.close .logo-details .logo_name {
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links {
+  height: 100%;
+  padding: 40px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar.close .nav-links {
+  overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+  margin-top: 25px;
+}
+
+.sidebar .nav-links li:hover {
+  background: #1d1b31;
+  /* background: #C7E1C8; */
+}
+
+.optionOpen {
+  background: #1d1b31;
+}
+
+.sidebar.close .nav-links li:hover {
+  /* background: #1d1b31; */
+  background: #C7E1C8;
+}
+
+.sidebar .nav-links li .iocn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+  display: block
+}
+
+.sidebar .nav-links li i {
+  height: 50px;
+  min-width: 70px;
+  text-align: center;
+  line-height: 52px;
+  /* color: #fff; */
+  color: #C7E1C8;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li i:hover {
+  color: #132644;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+  transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow {
+  display: none;
+}
+
+.sidebar .nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+  font-size: 13.4px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.sidebar.close .nav-links li a .link_name {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+  padding: 10px 6px 14px 70px;
+  margin-top: -8px;
+  background: #1d1b31;
+  display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+  display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+  color: #C7E1C8;
+  font-size: 13px;
+  padding: 2px 0;
+  /* white-space: nowrap; */
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+  opacity: 1;
+}
+
+/* ESTE DE AQUI ABAJO ES EL QUE TENGO QUE MODIFICAR PARA SACAR LOS MENUS DE HOVER */
+
+.sidebar.close .nav-links li .sub-menu {
+  position: absolute;
+  /* left: 100%; */
+  /* top: -10px; */
+  /* margin-top: 0; */
+  /* padding: 10px 70px; */
+  /* border-radius: 0 6px 6px 0; */
+  opacity: 0;
+  /* display: block; */
+  /* pointer-events: none; */
+  transition: 0s;
+  /* overflow: auto; */
+}
+
+/* .sidebar.close .nav-links li:hover .sub-menu {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+} */
+
+.sidebar .nav-links li .sub-menu .link_name {
+  display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar .profile-details {
+  position: fixed;
+  bottom: 0;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d1b31;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .profile-details {
+  background: none;
+}
+
+.sidebar.close .profile-details {
+  width: 78px;
+}
+
+.sidebar .profile-details .profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .profile-details img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 -30px 0 10px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+}
+
+.sidebar .profile-details i {
+  margin-right: 5px;
+}
+
+.sidebar.close .profile-details img {
+  padding: 10px;
+}
+
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job {
+  display: none;
+}
+
+.sidebar .profile-details .job {
+  font-size: 15px;
+}
+
+/* SUB - SUB MENUS */
+
+.link_subname {
+  color: rgb(141, 191, 248);
+  font-weight: 900;
+}
+
+li.showSubMenu i.arrow-sub {
+  transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow-sub {
+  display: none;
+}
+
+li.showSubMenu .sub-sub-menu {
+  display: block;
+}
+
+li .sub-sub-menu {
+  padding: 10px 5px 10px 15px;
+  margin-top: -10px;
+  background: #1d1b31;
+  display: none;
+}
+
+li:hover .sub-sub-menu.blank {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+li .sub-sub-menu.blank {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* END SUB - SUB MENUS */
+
+.home-section {
+  position: absolute;
+  /* background: #E4E9F7; */
+  height: 100%;
+  left: 320px;
+  width: calc(100% - 320px);
+  transition: all 0.1s ease;
+  /* ESTE ES EL EFECTO QUE TENGO QUE SACAR SI QUIERO QUE EL HEADER NO TRANSICIONE LENTO */
+  overflow: auto;
+  /* padding: 12px; */
+}
+
+.sidebar.close~.home-section {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+/* .home-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+  /* color: #132644; */
+  font-size: 35px;
+}
+
+.home-section .home-content .bx-menu {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.home-section .home-content .text {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 240px;
+  }
+
+  .sidebar.close {
+    width: 78px;
+  }
+
+  .sidebar .profile-details {
+    width: 240px;
+  }
+
+  .sidebar.close .profile-details {
+    background: none;
+  }
+
+  .sidebar.close .profile-details {
+    width: 78px;
+  }
+
+  .home-section {
+    left: 240px;
+    width: calc(100% - 240px);
+  }
+
+  .sidebar.close~.home-section {
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+}
+
+
+/* HEADER CONTENT */
+
+.header-content {
+  height: 60px;
+  background-color: #132644;
+  color: white;
+  /* display: block; */
+  position: fixed;
+  width: calc(100% - 320px);
+}
+
+.sidebar.close~.home-section .header-content {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+/* .sidebar.close~.header-content {
+  left: 78px;
+  width: calc(100% - 78px);
+} */
+
+.header-content i {
+  margin-left: 2px;
+}
+
+.titleHeader {
+  font-size: 20px;
+}
+
+.titleOptionHeader {
+  margin-top: 10px;
+}
+
+.selectedOptionHeader {
+  background-color: aliceblue;
+  border-radius: 23px;
+  padding: 3px 7px 3px 7px;
+}
+
+
+/* PAGE CONTENT */
+
+.page-content {
+  margin-top: 60px;
+}

@@ -1,0 +1,321 @@
+.start-section {
+    background-color: #F7FAFF;
+    height: 93.8vh;
+}
+
+.content-page {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.start-img {
+    width: 100%;
+}
+
+.text-welcome1 {
+    color: #FFFFFF;
+    font-size: clamp(3rem, 7vw, 3rem);
+    position: absolute;
+    left: 6%;
+    top: 18%;
+}
+
+.text-welcome2 {
+    color: #FFFFFF;
+    white-space: pre-wrap;
+    font-weight: bold;
+    font-size: clamp(1.7rem, 6vw, 4rem);
+    position: absolute;
+    left: 6%;
+    top: 25%;
+}
+
+.bottom-dotted {
+    border-bottom: 2px dotted #cecece;
+    margin-bottom: 15px;
+}
+
+.actions-tittle {
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.line-custom{
+    margin-top: 130px;
+}
+
+.buttons-section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.button-style {
+    background-color: #132644;
+    color: white;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 8px;
+    width: 53% !important
+}
+
+.button-style:hover {
+    background-color: #C7E1C8 !important;
+    color: black !important;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* RESPONSIVE SIDE */
+
+@media (max-width: 1750px) {
+    .text-welcome1 {
+        top: 18%;
+        font-size: 2.9rem
+    }
+
+    .text-welcome2 {
+        top: 25%;
+        font-size: 3.1rem
+    }
+}
+
+@media (max-width: 1550px) {
+    .text-welcome1 {
+        top: 18%;
+        font-size: 2.7rem
+    }
+
+    .text-welcome2 {
+        top: 25%;
+        font-size: 2.9rem
+    }
+}
+
+@media (max-width: 1350px) {
+    .text-welcome1 {
+        top: 16%;
+        left: 30%;
+        font-size: 2.5rem
+    }
+
+    .text-welcome2 {
+        top: 24%;
+        left: 30%;
+        font-size: 2.7rem
+    }
+}
+
+@media (max-width: 1250px) {
+    .text-welcome1 {
+        top: 15%;
+        left: 30%;
+        font-size: 2.3rem
+    }
+
+    .text-welcome2 {
+        top: 22%;
+        left: 30%;
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width: 1180px) {
+    .text-welcome1 {
+        top: 15%;
+        left: 26%;
+        font-size: 2rem
+    }
+
+    .text-welcome2 {
+        top: 22%;
+        left: 26%;
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width: 1150px) {
+    .text-welcome1 {
+        top: 15%;
+        left: 30%;
+        font-size: 2rem
+    }
+
+    .text-welcome2 {
+        top: 22%;
+        left: 30%;
+        font-size: 2.4rem
+    }
+}
+
+@media (max-width: 1070px) {
+    .text-welcome1 {
+        top: 13%;
+        left: 30%;
+        font-size: 2rem
+    }
+
+    .text-welcome2 {
+        top: 20%;
+        left: 30%;
+        font-size: 2.2rem
+    }
+
+    .button-style {
+        width: 70% !important
+    }
+
+}
+
+@media (max-width: 991px) {
+    .text-welcome1 {
+        top: 12%;
+        left: 33%;
+        font-size: 1.7rem
+    }
+
+    .text-welcome2 {
+        top: 17%;
+        left: 33%;
+        font-size: 1.9rem
+    }
+}
+
+@media (max-width: 890px) {
+    .text-welcome1 {
+        top: 12%;
+        left: 33%;
+        font-size: 1.5rem
+    }
+
+    .text-welcome2 {
+        top: 17%;
+        left: 33%;
+        font-size: 1.7rem
+    }
+    .button-style {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-welcome1 {
+        top: 12%;
+        left: 33%;
+        font-size: 1.5rem;
+        display: none
+    }
+
+    .text-welcome2 {
+        top: 17%;
+        left: 33%;
+        font-size: 1.7rem;
+        display: none;
+    }
+    .button-style {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 735px) {
+    .text-welcome1 {
+        top: 12%;
+        left: 10%;
+        font-size: 1.5rem
+    }
+
+    .text-welcome2 {
+        top: 18%;
+        left: 10%;
+        font-size: 1.7rem
+    }
+}
+
+@media (max-width: 640px) {
+    .text-welcome1 {
+        top: 11%;
+        left: 11%;
+        font-size: 1.4rem
+    }
+
+    .text-welcome2 {
+        top: 16%;
+        left: 11%;
+        font-size: 1.6rem
+    }
+}
+
+@media (max-width: 600px) {
+    .text-welcome1 {
+        top: 11%;
+        left: 11%;
+        font-size: 1.3rem
+    }
+
+    .text-welcome2 {
+        top: 15%;
+        left: 11%;
+        font-size: 1.4rem
+    }
+}
+
+@media (max-width: 575px) {
+    .text-welcome1 {
+        top: 11%;
+        left: 11%;
+        font-size: 1.3rem
+    }
+
+    .text-welcome2 {
+        top: 15%;
+        left: 11%;
+        font-size: 1.4rem
+    }
+    .button-container {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .start-img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .text-welcome1 {
+        color: black;
+        top: 21%;
+        left: 8%;
+        font-size: 1.5rem
+    }
+
+    .text-welcome2 {
+        color: black;
+        top: 25%;
+        left: 8%;
+        font-size: 1.6rem
+    }
+
+    .content-page {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .button-style {
+        width: 100% !important;
+    }
+
+    .actions-section{
+        margin-top: 40%;
+    }
+
+    .actions-tittle{
+        font-size: 1.2rem;
+    }
+}
